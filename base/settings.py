@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'photos.apps.PhotosConfig',
     'cloudinary',
     'cloudinary_storage',
+    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
