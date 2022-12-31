@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-import cloudinary_storage
+# import cloudinary_storage
 from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'photos.apps.PhotosConfig',
     'cloudinary',
-    'cloudinary_storage',
+    # 'cloudinary_storage',
     'whitenoise.runserver_nostatic',
 ]
 

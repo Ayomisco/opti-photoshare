@@ -24,6 +24,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
+                {% if request.user.is_authenticated %}
+                    <p> Hello {{ request.user.username|capfirst }}
+                {% endif %}
                 <div class="card">
                     <div class="card-header">
                       Categories
@@ -41,6 +44,7 @@
                       {% endfor %}
                         <a href="{% url 'add' %}" class="btn btn-dark btn-block btn-sm m-1 ">Add Photo</a>
                       
+                        <a href="{% url 'logout' %}" class="btn btn-danger btn-block btn-sm m-1 mt-1">Logout</a>
                     </ul>
                   </div>
             </div>
